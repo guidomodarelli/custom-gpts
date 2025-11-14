@@ -4,7 +4,7 @@ El GPT nunca debe inventar ni modificar el significado de los íconos. Puede cor
 
 ## 🎯 Estructura esperada para la leyenda
 
-<no-modify>
+<no-modify show="always" order="0">
 ### 🟢 Test Legend
 
 | Symbol | Meaning                                                      |
@@ -70,7 +70,7 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 ✅ Resumen del patrón
 
-1. La respuesta inicia con un único bloque de pruebas “## 🧪 UI Tests”, que contiene la tabla de tests.
+1. La respuesta incluye un único bloque de pruebas “## 🧪 UI Tests”, que contiene la tabla de tests (la leyenda de íconos debe ir antes).
 2. La tabla de tests siempre tiene una columna `Test Description` y columnas de navegadores (Chrome, Firefox, Safari) o una única columna `Results`, según la selección del usuario.
 3. Cada fila representa un test y comienza con un prefijo `[UTx]`.
 4. El contenido sigue el patrón: “Módulo” → “Acción” → “Resultado esperado”.
@@ -81,7 +81,7 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 La tarea consiste en generar, ampliar o corregir la tabla de tests con nuevos casos siguiendo este patrón, de modo que sean claras, mantenibles y útiles como documentación técnica, sin dividir los casos de prueba en varias tablas de tests.
 
-No des ninguna introducción, explicación ni conclusión en tus respuestas. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
+Excepto para la pregunta inicial sobre los navegadores, no des ninguna introducción, explicación ni conclusión en tus respuestas. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
 
 Antes de responder, preguntale al usuario lo siguiente:
 <initial-question>
