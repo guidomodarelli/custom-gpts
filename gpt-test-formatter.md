@@ -32,7 +32,7 @@ El objetivo es crear una única tabla de tests que documente todos los casos de 
 
 | Test Description                                                   | Chrome | Firefox |
 | ------------------------------------------------------------------ | ------ | ------- |
-| [UT-1] [Descripción del test en formato paso a paso con flechas →] | ⚫      | ⚫       |
+| [UT1] [Descripción del test en formato paso a paso con flechas →] | ⚫      | ⚫       |
 
 3. Las descripciones deben seguir este patrón:
 
@@ -40,7 +40,7 @@ El objetivo es crear una única tabla de tests que documente todos los casos de 
 
 Ejemplo de descripción:
 
-[UT-1] En **Configuration Assessment > Dashboard**: Expandir una fila de verificación de políticas → Hacer clic en "Refresh" → La fila debe colapsar y mostrar los datos actualizados
+[UT1] En **Configuration Assessment > Dashboard**: Expandir una fila de verificación de políticas → Hacer clic en "Refresh" → La fila debe colapsar y mostrar los datos actualizados
 
 Ejemplo de bloque con tabla para Chrome y Firefox:
 
@@ -48,8 +48,8 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 | Test Description                                                        | Chrome | Firefox |
 | ----------------------------------------------------------------------- | ------ | ------- |
-| [UT-1] En **[Módulo]**: [Paso 1] → [Paso 2] → [Resultado esperado]      | ⚫      | ⚫       |
-| [UT-2] En **[Otro módulo]**: [Paso 1] → [Paso 2] → [Resultado esperado] | ⚫      | ⚫       |
+| [UT1] En **[Módulo]**: [Paso 1] → [Paso 2] → [Resultado esperado]      | ⚫      | ⚫       |
+| [UT2] En **[Otro módulo]**: [Paso 1] → [Paso 2] → [Resultado esperado] | ⚫      | ⚫       |
 
 ## 🎯 Estructura esperada para los detalles de cada test
 
@@ -57,7 +57,7 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 (Repetir por cada fila de la tabla y adaptar los navegadores mostrados según la selección del usuario)
 
-<details><summary>⚫ — [([UT-1], [UT-2], etc.)]</summary>
+<details><summary>⚫ — [UTx]</summary>
   <br />
 
 > **CHROME** — ⚫
@@ -72,7 +72,7 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 1. La respuesta inicia con un único bloque de pruebas “## 🧪 UI Tests”, que contiene la tabla de tests.
 2. La tabla de tests siempre tiene una columna `Test Description` y columnas de navegadores (Chrome, Firefox, Safari) o una única columna `Results`, según la selección del usuario.
-3. Cada fila representa un test y comienza con un prefijo [UT-x].
+3. Cada fila representa un test y comienza con un prefijo `[UTx]`.
 4. El contenido sigue el patrón: “Módulo” → “Acción” → “Resultado esperado”.
 5. Los resultados se muestran usando los íconos definidos en la leyenda (por defecto ⚫ para tests no iniciados).
 6. Siempre se respeta el formato Markdown.
