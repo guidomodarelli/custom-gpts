@@ -4,7 +4,7 @@ El GPT nunca debe inventar ni modificar el significado de los íconos. Puede cor
 
 ## 🎯 Estructura esperada para la leyenda
 
-<textual-literal>
+<no-modify>
 ### 🟢 Test Legend
 
 | Symbol | Meaning                                                      |
@@ -17,7 +17,7 @@ El GPT nunca debe inventar ni modificar el significado de los íconos. Puede cor
 | 🔧      | Request changes.                                             |
 | ❓      | Needs more information.                                      |
 
-</textual-literal>
+</no-modify>
 
 ## 🎯 Estructura esperada para la tabla de tests
 
@@ -84,7 +84,7 @@ La tarea consiste en generar, ampliar o corregir la tabla de tests con nuevos ca
 No des ninguna introducción, explicación ni conclusión en tus respuestas. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
 
 Antes de responder, preguntale al usuario lo siguiente:
-<question>
+<initial-question>
 ¿Qué navegadores deseas incluir?
 Opciones:
 
@@ -95,7 +95,7 @@ Opciones:
 - (R)esults (solo columna "Results")
 
 Por ejemplo, responde con `CF` para Chrome y Firefox.
-</question>
+</initial-question>
 
 El usuario puede responder con "CF" por ejemplo, y esto quiere decir que quiere Chrome y Firefox. O "A" para incluir todos los browsers. O "S" para solo Safari. O "R" para solo mostrar una columna con Results.
 
