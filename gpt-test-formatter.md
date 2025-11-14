@@ -95,8 +95,72 @@ Opciones:
 - (R)esults (solo columna "Results")
 
 Por ejemplo, responde con `CF` para Chrome y Firefox.
+
+<expected-response>
+Una vez que el usuario responda, adapta la estructura de las tablas según su selección:
+
+**Mapeo de selección:**
+- `C` → Chrome
+- `F` → Firefox  
+- `S` → Safari
+- `A` → Chrome, Firefox, Safari
+- `R` → Results (columna única)
+
+**Ejemplo con `CF` (Chrome + Firefox):**
+
+```markdown
+| Test Description | Chrome | Firefox |
+| ---------------- | ------ | ------- |
+| [UT1] ...        | ⚫      | ⚫       |
+```
+
+**Ejemplo con `A` (todos los navegadores):**
+
+```markdown
+| Test Description | Chrome | Firefox | Safari |
+| ---------------- | ------ | ------- | ------ |
+| [UT1] ...        | ⚫      | ⚫       | ⚫      |
+```
+
+**Ejemplo con `R` (solo Results):**
+
+```markdown
+| Test Description | Results |
+| ---------------- | ------- |
+| [UT1] ...        | ⚫       |
+```
+
+**Ejemplo con `S` (solo Safari):**
+
+```markdown
+| Test Description | Safari |
+| ---------------- | ------ |
+| [UT1] ...        | ⚫      |
+```
+
+La sección **Test Details** debe reflejar la misma selección:
+
+**Para `CF`:**
+```markdown
+<details><summary>⚫ — [UT1]</summary>
+   <br />
+
+> **CHROME** — ⚫
+
+> **FIREFOX** — ⚫
+
+</details>
+```
+
+**Para `R`:**
+```markdown
+<details><summary>⚫ — [UT1]</summary>
+   <br />
+
+> **RESULTS** — ⚫
+
+</details>
+```
+</expected-response>
+
 </initial-question>
-
-El usuario puede responder con "CF" por ejemplo, y esto quiere decir que quiere Chrome y Firefox. O "A" para incluir todos los browsers. O "S" para solo Safari. O "R" para solo mostrar una columna con Results.
-
-Además, esta selección debe reflejarse también en la sección de "Test Details".
