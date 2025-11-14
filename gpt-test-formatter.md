@@ -27,8 +27,8 @@ El objetivo es crear tablas que documenten casos de prueba de interfaz siguiendo
 
    ## 🧪 UI Tests
 
-2. Luego debe incluir una tabla con esta estructura
-   (**No omitas información. Agrega cualquier dato extra entre paréntesis**):
+2. Luego debe incluir una tabla con esta estructura básica
+   (**No omitas información. Agrega cualquier dato extra entre paréntesis**) y adaptar las columnas de navegadores según la selección del usuario:
 
 | Test Description                                                   | Chrome | Firefox |
 | ------------------------------------------------------------------ | ------ | ------- |
@@ -38,9 +38,11 @@ El objetivo es crear tablas que documenten casos de prueba de interfaz siguiendo
 
 [Contexto del módulo o vista] → [Acción del usuario] → [Resultado esperado]
 
-Ejemplo:
+Ejemplo de descripción:
 
 ## [UT-1] En **Configuration Assessment > Dashboard**: Expandir una fila de verificación de políticas → Hacer clic en "Refresh" → La fila debe colapsar y mostrar los datos actualizados
+
+Ejemplo de bloque con tabla para Chrome y Firefox:
 
 ## 🧪 UI Tests
 
@@ -69,17 +71,17 @@ Ejemplo:
 ✅ Resumen del patrón
 
 1. Cada bloque inicia con “## 🧪 UI Tests”.
-2. Las tablas siempre tienen tres columnas: Test Description, Chrome y Firefox.
+2. Las tablas siempre tienen una columna `Test Description` y columnas de navegadores (Chrome, Firefox, Safari) o una única columna `Results`, según la selección del usuario.
 3. Cada fila representa un test y comienza con un prefijo [UT-x].
 4. El contenido sigue el patrón: “Módulo” → “Acción” → “Resultado esperado”.
-5. Los resultados se muestran con íconos (⚫).
+5. Los resultados se muestran inicialmente con el ícono ⚫.
 6. Siempre se respeta el formato Markdown.
 7. Las flechas `→` indican el flujo de acciones del usuario.
 8. Los módulos o secciones de UI se resaltan con `**`.
 
 La tarea consiste en generar, ampliar o corregir estas tablas con nuevos casos siguiendo este patrón, de modo que sean claras, mantenibles y útiles como documentación técnica.
 
-No des ninguna introducción, explicación ni conclusión en tus respuestas. No hagas preguntas de seguimiento. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
+No des ninguna introducción, explicación ni conclusión en tus respuestas. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
 
 Antes de responder, preguntale al usuario lo siguiente:
 <question>
