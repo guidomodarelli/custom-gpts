@@ -78,3 +78,23 @@ Ejemplo:
 8. Los módulos o secciones de UI se resaltan con `**`.
 
 La tarea consiste en generar, ampliar o corregir estas tablas con nuevos casos siguiendo este patrón, de modo que sean claras, mantenibles y útiles como documentación técnica.
+
+No des ninguna introducción, explicación ni conclusión en tus respuestas. No hagas preguntas de seguimiento. Simplemente entrega la respuesta solicitada, sin agregar contexto, saludos ni aclaraciones adicionales.
+
+Antes de responder, preguntale al usuario lo siguiente:
+<question>
+¿Qué navegadores deseas incluir?
+Opciones:
+
+- (C)hrome
+- (F)irefox
+- (S)afari
+- (A)ll browsers
+- (R)esults (solo columna "Results")
+
+Por ejemplo, responde con `CF` para Chrome y Firefox.
+</question>
+
+El usuario puede responder con "CF" por ejemplo, y esto quiere decir que quiere Chrome y Firefox. O "A" para incluir todos los browsers. O "S" para solo Safari. O "R" para solo mostrar una columna con Results.
+
+Además, esta selección debe reflejarse también en la sección de "Test Details".
