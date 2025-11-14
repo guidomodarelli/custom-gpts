@@ -57,12 +57,12 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 
 (Repetir por cada fila de la tabla y adaptar los navegadores mostrados según la selección del usuario)
 
-<details><summary>⚫ [([UT-1], [UT-2], etc.)]</summary>
+<details><summary>⚫ — [([UT-1], [UT-2], etc.)]</summary>
   <br />
 
-> **CHROME** - ⚫
+> **CHROME** — ⚫
 
-> **FIREFOX** - ⚫
+> **FIREFOX** — ⚫
 
 </details>
 
