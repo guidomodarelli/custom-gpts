@@ -87,7 +87,9 @@ Ejemplo de bloque con tabla para Chrome y Firefox:
 (Repetir por cada fila de la tabla y adaptar los navegadores mostrados según la selección del usuario)
 
 <details><summary>⚫ — [UTx]</summary>
-  <br />
+   <br />
+
+(NO eliminar NI modificar cualquier descripción, detalle o explicación adicional que el usuario proporcione aquí)
 
 > **CHROME** — ⚫
 
